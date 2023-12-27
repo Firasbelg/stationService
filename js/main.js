@@ -251,29 +251,6 @@ function addSelectedProduct(name, category, price, image) {
     document.querySelector('.product-display').style.display = 'none';
 }
 
-// Function to display products in the product display section
-function displayProductsInModal() {
-    const productDisplay = document.querySelector('.product-display .product-list');
-    productDisplay.innerHTML = ''; // Clear existing content
-
-    productsData.forEach(product => {
-        const productItem = document.createElement('div');
-        productItem.classList.add('shop-content');
-        productItem.innerHTML = `
-            <img src="${product.image}" alt="" class="product-img">
-            <div class="product-details">
-                <h3>${product.name}</h3>
-                <p>Category: ${product.category}</p>
-                <p>Price: ${product.price}</p>
-                <button onclick="addSelectedProduct('${product.name}', '${product.category}', '${product.price}', '${product.image}')">Add</button>
-            </div>
-        `;
-        productDisplay.appendChild(productItem);
-    });
-
-    // Show the product display section
-    document.querySelector('.product-display').style.display = 'block';
-}
 
 
 let isAdmin = false; // Default user role
