@@ -276,55 +276,6 @@ function displayProductsInModal() {
 }
 
 
-
-
-
-
-// // Function to open the modal
-// function openModal() {
-//     document.getElementById('addProductModal').style.display = 'block';
-// }
-
-// // Function to close the modal
-// function closeModal() {
-//     document.getElementById('addProductModal').style.display = 'none';
-// }
-
-// // Event listener for opening modal
-// document.getElementById('cart-icon').addEventListener('click', openModal);
-
-// // Event listener for closing modal
-// document.querySelector('.close').addEventListener('click', closeModal);
-
-// // Function to handle form submission and add product
-// document.getElementById('addProductForm').addEventListener('submit', function (e) {
-//     e.preventDefault();
-
-//     const productName = document.getElementById('productName').value;
-//     const productCategory = document.getElementById('productCategory').value;
-//     const productPrice = document.getElementById('productPrice').value;
-//     const productImageURL = document.getElementById('productImageURL').value;
-
-//     // Create new product box
-//     const newProductBox = document.createElement('div');
-//     newProductBox.classList.add('product-box');
-//     newProductBox.setAttribute('data-category', productCategory);
-    
-//     // Construct the HTML content for the new product box
-//     const newProductContent = `
-//         <img src="${productImageURL}" alt="" class="product-img">
-//         <h2 class="product-title">${productName}</h2>
-//         <span class="price">${productPrice}DT</span>
-//         <i class='bx bx-shopping-bag add-cart' style="color: black;"></i>
-//     `;
-//     newProductBox.innerHTML = newProductContent;
-
-//     // Add the new product box to the shop content
-//     document.querySelector('.shop-content').appendChild(newProductBox);
-
-//     // Close the modal after adding the product
-//     closeModal();
-// });
 let isAdmin = false; // Default user role
 
 function checkUserRole() {
