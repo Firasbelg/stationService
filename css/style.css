@@ -58,11 +58,12 @@ header{
     color: var(--text-color);
     font-weight: 700;
 }
-
 #cart-icon{
     font-size: 1.8rem;
     cursor: pointer;
 }
+    
+
 .cart{
     position: fixed;
     top: 0;
@@ -276,6 +277,23 @@ header{
 
 .filter-container input[type="number"] {
     width: 120px;
+}
+/* Styles pour le bouton Home */
+#home-button {
+    background-color: #fff;
+    border: 1px solid #000;
+    padding: 8px 12px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    background-color: #FFCC00;
+    
+}
+
+/* Styles pour l'icône à l'intérieur du bouton */
+#home-button i {
+    margin-right: 8px;
+    /* Autres styles pour l'icône */
 }
 
 .filter-container button {
